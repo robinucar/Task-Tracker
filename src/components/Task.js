@@ -1,8 +1,9 @@
+import TaskItem from './TaskItem';
 const Task = ({ tasks }) => {
   return (
     <>
       {tasks.map((task) => (
-        <h3 key={task.id}>{task.text}</h3>
+        <TaskItem key={task.id} task={task} />
       ))}
     </>
   );

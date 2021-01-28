@@ -12,7 +12,7 @@ const TaskItem = ({ task, onDelete, toggleItem }) => {
           onClick={() => onDelete(task.id)}
         />
       </h3>
-      <p>{task.day}</p>
+      <p>{task.time}</p>
     </div>
   );
 };
